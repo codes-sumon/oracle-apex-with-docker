@@ -1,4 +1,5 @@
 # oracle-apex-with-docker
+```bash
 docker login container-registry.oracle.com
 docker-compose up -d
 docker exec -it oracle19c bash
@@ -14,7 +15,7 @@ alter session set container=ORCLPDB1;
 @apexins.sql SYSAUX SYSAUX TEMP /i/
 @apxchpwd.sql
 @apex_rest_config.sql
-
+```
 
 --Static path config
 ords --config /etc/ords/config config set standalone.static.path /ords/apex/images
